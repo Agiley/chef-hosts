@@ -6,7 +6,7 @@
 <% end %>
 
 <% if @node[:hosts][:entries] %>
-<% @node[:hosts][:entries].each do |name, ip| %>
+<% @node[:hosts][:entries].each do |ip, name| %>
 <%= ip %> <%= name %>
 <% end %>
 <% end %>
